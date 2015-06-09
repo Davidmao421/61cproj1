@@ -1,0 +1,10 @@
+Fill in your answers here.
+
+1.
+Although the algorithm identifies the sticky note fairly well, there are some pixels that are identified as "close as" the sticky note. Because the sky and the sticky note are slight similar in color, they show up as red; the sky is mistakenly identified as being as "close by" as the sticky note. That is because the algorithm picks the feature which is most similar to the pixel within the search space. 
+
+2. 
+Yes, the algorithm works better with real2. This is because there is more distinct contrast between the sticky note and the background. The pixels around the sticky note are therefore distinguished from being part of the note, making the note stand out as being closer.    
+
+3. The output images become noisier, as the feature size is increased. Because the feature is larger, the distribution of euclidean sums in the search space probably expands, thus changing the lowest normalized distance, which means that it now includes pixels that would have not otherwise been included with a smaller feature. With a greater feature width, there are more pixels that can be identified as being close by. 
+
